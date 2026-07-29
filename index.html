@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>HEX to RGB Color Converter — Free Color Code Tool | Tabutility</title>
+  <meta name="description" content="Convert HEX color codes to RGB, HSL and more. Instantly convert #ffffff to rgb(255,255,255). Free color converter with live preview — no sign-up needed."/>
+  <link rel="canonical" href="https://hex-to-rgb.tabutility.com/"/>
+  <meta property="og:type" content="website"/>
+  <meta property="og:url" content="https://hex-to-rgb.tabutility.com/"/>
+  <meta property="og:title" content="HEX to RGB Color Converter"/>
+  <meta property="og:description" content="Convert HEX color codes to RGB, HSL and more with a live preview."/>
+  <meta property="og:site_name" content="Tabutility"/>
+  <meta name="twitter:card" content="summary"/>
+  <meta name="robots" content="index, follow"/>
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🎨</text></svg>"/>
+  <meta name="theme-color" content="#1a1a2e"/>
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"WebApplication","name":"HEX to RGB Color Converter","url":"https://hex-to-rgb.tabutility.com/","description":"Convert HEX color codes to RGB, HSL and more with live preview.","applicationCategory":"DeveloperApplication","operatingSystem":"Any","offers":{"@type":"Offer","price":"0","priceCurrency":"USD"},"provider":{"@type":"Organization","name":"Tabutility","url":"https://tabutility.com"}}</script>
+  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7039091592734005" crossorigin="anonymous"></script>
+  <script>window.addEventListener('load',function(){var s=document.createElement('script');s.async=true;s.src='https://www.googletagmanager.com/gtag/js?id=G-78VZWJ5B1W';document.head.appendChild(s);window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}window.gtag=gtag;gtag('js',new Date());gtag('config','G-78VZWJ5B1W');});</script>
+  <style>
+    *,*::before,*::after{box-sizing:border-box}
+    body{margin:0;font-family:'Segoe UI',system-ui,Arial,sans-serif;background:#f8fafc;color:#1e293b;line-height:1.6}
+    a{color:#4f46e5;text-decoration:none}
+    nav{background:#1a1a2e;padding:14px 20px;display:flex;align-items:center;justify-content:space-between;position:sticky;top:0;z-index:100}
+    .nav-brand{color:#fff;font-size:18px;font-weight:800}
+    .nav-links a{color:rgba(255,255,255,0.8);font-size:14px;margin-left:20px;font-weight:500}
+    .hero{background:linear-gradient(135deg,#1a1a2e,#16213e);color:#fff;padding:40px 20px 32px;text-align:center}
+    .hero h1{font-size:clamp(24px,4vw,38px);font-weight:900;margin:0 0 10px}
+    .hero p{color:rgba(255,255,255,0.75);margin:0;font-size:16px}
+    .wrap{max-width:680px;margin:0 auto;padding:32px 20px 60px}
+    .card{background:#fff;border-radius:16px;padding:28px;box-shadow:0 2px 16px rgba(0,0,0,0.07);margin-bottom:24px;border:1.5px solid #e8ecf2}
+    .card h2{font-size:18px;font-weight:800;margin:0 0 20px}
+    label{display:block;font-size:13px;font-weight:600;color:#64748b;margin-bottom:6px;text-transform:uppercase;letter-spacing:0.4px}
+    .hex-wrap{display:flex;align-items:center;gap:12px}
+    .hash{font-size:24px;font-weight:900;color:#64748b}
+    input[type=text]{flex:1;padding:12px 14px;border:2px solid #e2e8f0;border-radius:10px;font-size:22px;font-weight:700;color:#1e293b;background:#f8fafc;outline:none;transition:border 0.2s;font-family:monospace}
+    input[type=text]:focus{border-color:#4f46e5;background:#fff}
+    input[type=color]{width:56px;height:56px;border:2px solid #e2e8f0;border-radius:10px;cursor:pointer;padding:4px;background:#f8fafc}
+    .preview-box{width:100%;height:120px;border-radius:14px;margin:20px 0;border:2px solid #e2e8f0;transition:background 0.2s;display:flex;align-items:center;justify-content:center;font-size:18px;font-weight:700}
+    .output-grid{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+    @media(max-width:480px){.output-grid{grid-template-columns:1fr}}
+    .out-box{background:#f8fafc;border-radius:10px;padding:14px 16px;cursor:pointer;transition:background 0.15s;border:1.5px solid #e2e8f0}
+    .out-box:hover{background:#eff6ff;border-color:#bfdbfe}
+    .out-label{font-size:11px;font-weight:700;color:#94a3b8;text-transform:uppercase;letter-spacing:0.5px;margin-bottom:4px}
+    .out-val{font-size:14px;font-weight:700;color:#1e293b;font-family:monospace;word-break:break-all}
+    .copied{font-size:11px;color:#10b981;font-weight:700;margin-top:4px;display:none}
+    .swatches{display:flex;flex-wrap:wrap;gap:8px;margin-top:8px}
+    .swatch{width:36px;height:36px;border-radius:8px;cursor:pointer;border:2px solid transparent;transition:transform 0.15s}
+    .swatch:hover{transform:scale(1.15);border-color:#fff;box-shadow:0 2px 8px rgba(0,0,0,0.2)}
+    .ad-wrap{margin:20px 0;text-align:center;min-height:90px;background:#f8fafc;border-radius:8px}
+    footer{background:#1a1a2e;color:rgba(255,255,255,0.6);text-align:center;padding:24px 20px;font-size:14px}
+    footer a{color:#818cf8}
+  </style>
+</head>
+<body>
+<nav>
+  <a href="https://tabutility.com" class="nav-brand">⚡ Tabutility</a>
+  <div class="nav-links">
+    <a href="https://tabutility.com">All Tools</a>
+    <a href="https://tabutility.com/blog/">Blog</a>
+  </div>
+</nav>
+<div class="hero">
+  <h1>🎨 HEX to RGB Converter</h1>
+  <p>Convert any HEX colour code to RGB, HSL and CSS values — with a live preview</p>
+</div>
+<div class="wrap">
+  <div class="card">
+    <h2>Enter Colour</h2>
+    <div class="hex-wrap">
+      <span class="hash">#</span>
+      <input type="text" id="hex-input" placeholder="4f46e5" maxlength="6" oninput="fromHex(this.value)" value="4f46e5"/>
+      <input type="color" id="color-picker" value="#4f46e5" oninput="fromPicker(this.value)"/>
+    </div>
+    <div class="preview-box" id="preview" style="background:#4f46e5">
+      <span id="preview-text" style="color:#fff">#4f46e5</span>
+    </div>
+
+    <div class="output-grid" id="output-grid">
+      <div class="out-box" onclick="copyVal(this,'rgb-val')">
+        <div class="out-label">RGB</div>
+        <div class="out-val" id="rgb-val">rgb(79, 70, 229)</div>
+        <div class="copied">Copied!</div>
+      </div>
+      <div class="out-box" onclick="copyVal(this,'rgba-val')">
+        <div class="out-label">RGBA</div>
+        <div class="out-val" id="rgba-val">rgba(79, 70, 229, 1)</div>
+        <div class="copied">Copied!</div>
+      </div>
+      <div class="out-box" onclick="copyVal(this,'hsl-val')">
+        <div class="out-label">HSL</div>
+        <div class="out-val" id="hsl-val">hsl(243, 75%, 59%)</div>
+        <div class="copied">Copied!</div>
+      </div>
+      <div class="out-box" onclick="copyVal(this,'hex-full-val')">
+        <div class="out-label">HEX (full)</div>
+        <div class="out-val" id="hex-full-val">#4f46e5</div>
+        <div class="copied">Copied!</div>
+      </div>
+      <div class="out-box" onclick="copyVal(this,'css-var-val')">
+        <div class="out-label">CSS Variable</div>
+        <div class="out-val" id="css-var-val">--color: #4f46e5;</div>
+        <div class="copied">Copied!</div>
+      </div>
+      <div class="out-box" onclick="copyVal(this,'tailwind-val')">
+        <div class="out-label">RGB values only</div>
+        <div class="out-val" id="tailwind-val">79, 70, 229</div>
+        <div class="copied">Copied!</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="card">
+    <h2>Popular Colours</h2>
+    <div class="swatches" id="swatches"></div>
+  </div>
+
+  <div class="ad-wrap">
+    <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-7039091592734005" data-ad-slot="auto" data-ad-format="auto" data-full-width-responsive="true"></ins>
+    <script>(adsbygoogle=window.adsbygoogle||[]).push({});</script>
+  </div>
+</div>
+<footer>
+  <p>© 2025 <a href="https://tabutility.com">Tabutility</a> — Free Online Tools</p>
+</footer>
+<script>
+  const SWATCHES = ['#ef4444','#f97316','#eab308','#22c55e','#10b981','#06b6d4','#3b82f6','#6366f1','#8b5cf6','#ec4899','#1a1a2e','#ffffff','#000000','#64748b'];
+  const swatchEl = document.getElementById('swatches');
+  SWATCHES.forEach(c=>{
+    const s=document.createElement('div');
+    s.className='swatch';
+    s.style.background=c;
+    s.title=c;
+    s.onclick=()=>fromHex(c.slice(1));
+    swatchEl.appendChild(s);
+  });
+
+  function fromPicker(val){
+    fromHex(val.slice(1));
+    document.getElementById('hex-input').value=val.slice(1);
+  }
+
+  function fromHex(hex){
+    hex=hex.replace('#','').trim();
+    if(hex.length===3) hex=hex.split('').map(c=>c+c).join('');
+    if(!/^[0-9a-fA-F]{6}$/.test(hex)) return;
+
+    const r=parseInt(hex.slice(0,2),16);
+    const g=parseInt(hex.slice(2,4),16);
+    const b=parseInt(hex.slice(4,6),16);
+
+    // HSL
+    const rn=r/255,gn=g/255,bn=b/255;
+    const max=Math.max(rn,gn,bn),min=Math.min(rn,gn,bn);
+    let h,s,l=(max+min)/2;
+    if(max===min){h=s=0;}else{
+      const d=max-min;
+      s=l>0.5?d/(2-max-min):d/(max+min);
+      switch(max){
+        case rn:h=(gn-bn)/d+(gn<bn?6:0);break;
+        case gn:h=(bn-rn)/d+2;break;
+        case bn:h=(rn-gn)/d+4;break;
+      }
+      h/=6;
+    }
+
+    const hDeg=Math.round(h*360);
+    const sPct=Math.round(s*100);
+    const lPct=Math.round(l*100);
+
+    // Luminance for text contrast
+    const lum=0.2126*rn+0.7152*gn+0.0722*bn;
+    const textCol=lum>0.5?'#000':'#fff';
+
+    document.getElementById('preview').style.background='#'+hex;
+    document.getElementById('preview-text').style.color=textCol;
+    document.getElementById('preview-text').textContent='#'+hex.toUpperCase();
+    document.getElementById('color-picker').value='#'+hex;
+    document.getElementById('hex-input').value=hex;
+
+    document.getElementById('rgb-val').textContent=`rgb(${r}, ${g}, ${b})`;
+    document.getElementById('rgba-val').textContent=`rgba(${r}, ${g}, ${b}, 1)`;
+    document.getElementById('hsl-val').textContent=`hsl(${hDeg}, ${sPct}%, ${lPct}%)`;
+    document.getElementById('hex-full-val').textContent='#'+hex.toUpperCase();
+    document.getElementById('css-var-val').textContent=`--color: #${hex.toUpperCase()};`;
+    document.getElementById('tailwind-val').textContent=`${r}, ${g}, ${b}`;
+  }
+
+  function copyVal(box, id){
+    const val=document.getElementById(id).textContent;
+    navigator.clipboard.writeText(val).then(()=>{
+      const c=box.querySelector('.copied');
+      c.style.display='block';
+      setTimeout(()=>c.style.display='none',1500);
+    });
+  }
+</script>
+</body>
+</html>
