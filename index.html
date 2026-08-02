@@ -56,6 +56,7 @@
     footer{background:#1a1a2e;color:rgba(255,255,255,0.6);text-align:center;padding:24px 20px;font-size:14px}
     footer a{color:#818cf8}
   </style>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"How do you convert a hex color to RGB?","acceptedAnswer":{"@type":"Answer","text":"Split the six-digit hex code into three pairs — red, green and blue — and convert each pair from base-16 to base-10. For example, FF becomes 255, so #FF0000 is rgb(255, 0, 0)."}},{"@type":"Question","name":"What is the difference between hex and RGB color values?","acceptedAnswer":{"@type":"Answer","text":"They describe the same color in different notations. Hex uses a six-digit base-16 string like #3498DB, while RGB lists three decimal values from 0 to 255. Browsers treat #3498DB and rgb(52, 152, 219) identically."}},{"@type":"Question","name":"What does a 3-digit hex code like #FFF mean?","acceptedAnswer":{"@type":"Answer","text":"A shorthand hex code doubles each digit, so #FFF expands to #FFFFFF (white) and #0AF expands to #00AAFF. It only works when each color channel uses a repeated digit."}},{"@type":"Question","name":"How do I add transparency to an RGB color?","acceptedAnswer":{"@type":"Answer","text":"Use the rgba() notation, which adds a fourth alpha value between 0 (fully transparent) and 1 (fully opaque). For example, rgba(52, 152, 219, 0.5) is the same blue at 50% opacity."}},{"@type":"Question","name":"Is this hex to RGB converter free to use?","acceptedAnswer":{"@type":"Answer","text":"Yes — it is completely free, runs entirely in your browser, and requires no sign-up."}}]}</script>
 </head>
 <body>
 <nav>
@@ -223,5 +224,32 @@
   <a href="https://url-encoder.tabutility.com/" style="display:block;background:rgba(30,41,59,1);border:1px solid rgba(255,255,255,0.12);border-radius:10px;padding:12px 16px;text-decoration:none;color:inherit"><div style="font-size:13px;font-weight:600;color:#f1f5f9">URL Encoder / Decoder</div><div style="font-size:11px;color:#94a3b8;margin-top:2px">Developer Tools</div></a>
   <a href="https://password-generator.tabutility.com/" style="display:block;background:rgba(30,41,59,1);border:1px solid rgba(255,255,255,0.12);border-radius:10px;padding:12px 16px;text-decoration:none;color:inherit"><div style="font-size:13px;font-weight:600;color:#f1f5f9">Password Generator</div><div style="font-size:11px;color:#94a3b8;margin-top:2px">Developer Tools</div></a>
 </div>
+<section id="seo-content">
+  <style>
+    #seo-content{max-width:760px;margin:2.5rem auto;padding:0 1.25rem 3rem;font-family:system-ui,-apple-system,'Segoe UI',sans-serif;color:#334155;line-height:1.7}
+    #seo-content h2{font-size:1.35rem;color:#0f172a;margin:2rem 0 .75rem}
+    #seo-content h3{font-size:1.05rem;color:#0f172a;margin:1.25rem 0 .5rem}
+    #seo-content p,#seo-content li{font-size:.95rem}
+    #seo-content .example{background:#f8fafc;border:1px solid #e2e8f0;border-radius:8px;padding:1rem 1.25rem;margin:1rem 0}
+    @media (prefers-color-scheme:dark){#seo-content{color:#cbd5e1}#seo-content h2,#seo-content h3{color:#f1f5f9}#seo-content .example{background:#1e293b;border-color:#334155}}
+  </style>
+  <p>The hex to RGB converter translates a hexadecimal color code such as <code>#3498DB</code> into its red, green, and blue components, giving you a ready-to-paste <code>rgb()</code> value. It is built for web designers, front-end developers, and anyone matching brand colors across CSS, design tools, and style guides where different apps expect different color formats.</p>
+  <h2>How the Hex to RGB Converter Works</h2>
+  <p>A hex color is a six-digit code made of three pairs, one each for red, green, and blue. Each pair is written in base-16 (hexadecimal), where the digits run 0–9 then A–F. The converter takes each pair and turns it into a decimal number from 0 to 255 — the range RGB uses — so <code>FF</code> becomes 255 and <code>00</code> becomes 0.</p>
+  <p>Three-digit shorthand codes like <code>#0AF</code> are expanded first by doubling each digit to <code>#00AAFF</code>. The result is an <code>rgb(red, green, blue)</code> string you can drop straight into CSS, and adding an alpha channel gives you the <code>rgba()</code> form for transparency. Both hex and RGB describe exactly the same colours, so the choice usually comes down to what a particular tool or codebase expects — designers often think in hex, while dynamic CSS and canvas work often needs RGB.</p>
+  <div class="example"><strong>Example 1:</strong> <code>#3498DB</code> splits into 34, 98, DB → 52, 152, 219, giving <strong>rgb(52, 152, 219)</strong>, a familiar flat-UI blue used in many design systems.</div>
+  <div class="example"><strong>Example 2:</strong> Pure red <code>#FF0000</code> splits into FF, 00, 00 → 255, 0, 0, giving <strong>rgb(255, 0, 0)</strong>. Add an alpha channel for <code>rgba(255, 0, 0, 0.5)</code> to make it half transparent.</div>
+  <h2>Frequently Asked Questions</h2>
+  <h3>How do you convert a hex color to RGB?</h3>
+  <p>Split the six-digit hex code into three pairs — red, green and blue — and convert each pair from base-16 to base-10. For example, FF becomes 255, so #FF0000 is rgb(255, 0, 0).</p>
+  <h3>What is the difference between hex and RGB color values?</h3>
+  <p>They describe the same color in different notations. Hex uses a six-digit base-16 string like #3498DB, while RGB lists three decimal values from 0 to 255. Browsers treat #3498DB and rgb(52, 152, 219) identically.</p>
+  <h3>What does a 3-digit hex code like #FFF mean?</h3>
+  <p>A shorthand hex code doubles each digit, so #FFF expands to #FFFFFF (white) and #0AF expands to #00AAFF. It only works when each color channel uses a repeated digit.</p>
+  <h3>How do I add transparency to an RGB color?</h3>
+  <p>Use the rgba() notation, which adds a fourth alpha value between 0 (fully transparent) and 1 (fully opaque). For example, rgba(52, 152, 219, 0.5) is the same blue at 50% opacity.</p>
+  <h3>Is this hex to RGB converter free to use?</h3>
+  <p>Yes — it is completely free, runs entirely in your browser, and requires no sign-up.</p>
+</section>
 </body>
 </html>
