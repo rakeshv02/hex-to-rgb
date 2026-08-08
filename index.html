@@ -7,6 +7,7 @@
 <link rel="dns-prefetch" href="//pagead2.googlesyndication.com">
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap">
   <title>HEX to RGB Color Converter — Free Color Code Tool | Tabutility</title>
   <meta name="description" content="Convert HEX color codes to RGB, HSL and more. Instantly convert #ffffff to rgb(255,255,255). Free color converter with live preview — no sign-up needed."/>
   <link rel="canonical" href="https://hex-to-rgb.tabutility.com/"/>
@@ -24,7 +25,7 @@
   <script>window.addEventListener('load',function(){var s=document.createElement('script');s.async=true;s.src='https://www.googletagmanager.com/gtag/js?id=G-78VZWJ5B1W';document.head.appendChild(s);window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}window.gtag=gtag;gtag('js',new Date());gtag('config','G-78VZWJ5B1W');});</script>
   <style>
     *,*::before,*::after{box-sizing:border-box}
-    body{margin:0;font-family:'Segoe UI',system-ui,Arial,sans-serif;background:#f8fafc;color:#1e293b;line-height:1.6}
+    body{margin:0;font-family:'Segoe UI',system-ui,Arial,sans-serif;background:#f8fafc;color:#ffffff;line-height:1.6}
     a{color:#4f46e5;text-decoration:none}
     nav{background:#1a1a2e;padding:14px 20px;display:flex;align-items:center;justify-content:space-between;position:sticky;top:0;z-index:100}
     .nav-brand{color:#fff;font-size:18px;font-weight:800}
@@ -38,7 +39,7 @@
     label{display:block;font-size:13px;font-weight:600;color:#64748b;margin-bottom:6px;text-transform:uppercase;letter-spacing:0.4px}
     .hex-wrap{display:flex;align-items:center;gap:12px}
     .hash{font-size:24px;font-weight:900;color:#64748b}
-    input[type=text]{flex:1;padding:12px 14px;border:2px solid #e2e8f0;border-radius:10px;font-size:22px;font-weight:700;color:#1e293b;background:#f8fafc;outline:none;transition:border 0.2s;font-family:monospace}
+    input[type=text]{flex:1;padding:12px 14px;border:2px solid #e2e8f0;border-radius:10px;font-size:22px;font-weight:700;color:#ffffff;background:#f8fafc;outline:none;transition:border 0.2s;font-family:'Inter',monospace}
     input[type=text]:focus{border-color:#4f46e5;background:#fff}
     input[type=color]{width:56px;height:56px;border:2px solid #e2e8f0;border-radius:10px;cursor:pointer;padding:4px;background:#f8fafc}
     .preview-box{width:100%;height:120px;border-radius:14px;margin:20px 0;border:2px solid #e2e8f0;transition:background 0.2s;display:flex;align-items:center;justify-content:center;font-size:18px;font-weight:700}
@@ -46,8 +47,8 @@
     @media(max-width:480px){.output-grid{grid-template-columns:1fr}}
     .out-box{background:#f8fafc;border-radius:10px;padding:14px 16px;cursor:pointer;transition:background 0.15s;border:1.5px solid #e2e8f0}
     .out-box:hover{background:#eff6ff;border-color:#bfdbfe}
-    .out-label{font-size:11px;font-weight:700;color:#94a3b8;text-transform:uppercase;letter-spacing:0.5px;margin-bottom:4px}
-    .out-val{font-size:14px;font-weight:700;color:#1e293b;font-family:monospace;word-break:break-all}
+    .out-label{font-size:11px;font-weight:700;color:#64748b;text-transform:uppercase;letter-spacing:0.5px;margin-bottom:4px}
+    .out-val{font-size:14px;font-weight:700;color:#ffffff;font-family:'Inter',monospace;word-break:break-all}
     .copied{font-size:11px;color:#10b981;font-weight:700;margin-top:4px;display:none}
     .swatches{display:flex;flex-wrap:wrap;gap:8px;margin-top:8px}
     .swatch{width:36px;height:36px;border-radius:8px;cursor:pointer;border:2px solid transparent;transition:transform 0.15s}
@@ -57,6 +58,14 @@
     footer a{color:#818cf8}
   </style>
 <script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"How do you convert a hex color to RGB?","acceptedAnswer":{"@type":"Answer","text":"Split the six-digit hex code into three pairs — red, green and blue — and convert each pair from base-16 to base-10. For example, FF becomes 255, so #FF0000 is rgb(255, 0, 0)."}},{"@type":"Question","name":"What is the difference between hex and RGB color values?","acceptedAnswer":{"@type":"Answer","text":"They describe the same color in different notations. Hex uses a six-digit base-16 string like #3498DB, while RGB lists three decimal values from 0 to 255. Browsers treat #3498DB and rgb(52, 152, 219) identically."}},{"@type":"Question","name":"What does a 3-digit hex code like #FFF mean?","acceptedAnswer":{"@type":"Answer","text":"A shorthand hex code doubles each digit, so #FFF expands to #FFFFFF (white) and #0AF expands to #00AAFF. It only works when each color channel uses a repeated digit."}},{"@type":"Question","name":"How do I add transparency to an RGB color?","acceptedAnswer":{"@type":"Answer","text":"Use the rgba() notation, which adds a fourth alpha value between 0 (fully transparent) and 1 (fully opaque). For example, rgba(52, 152, 219, 0.5) is the same blue at 50% opacity."}},{"@type":"Question","name":"Is this hex to RGB converter free to use?","acceptedAnswer":{"@type":"Answer","text":"Yes — it is completely free, runs entirely in your browser, and requires no sign-up."}}]}</script>
+<style id="tabutility-brand">
+/* empty ad slots: reserve space, no bordered box */
+.ad-banner,.ad-slot,.ad-container{background:transparent!important;border:none!important;border-bottom:none!important;box-shadow:none!important}
+ins.adsbygoogle,.ad-banner iframe,.ad-slot iframe{visibility:hidden!important}
+ins.adsbygoogle[data-ad-status="filled"],.ad-banner ins[data-ad-status="filled"] iframe,.ad-slot ins[data-ad-status="filled"] iframe{visibility:visible!important}
+nav .brand{color:#0f172a}
+body{-webkit-font-smoothing:antialiased}
+</style>
 </head>
 <body>
 <nav>
@@ -203,45 +212,45 @@
 </script>
 
 <!-- embed-widget -->
-<div style="max-width:640px;margin:0 auto 32px;background:#1e293b;border:1px solid #334155;border-radius:12px;padding:18px">
-  <h2 style="font-size:15px;font-weight:700;color:#94a3b8;text-transform:uppercase;letter-spacing:.05em;margin-bottom:12px">Embed This Tool</h2>
+<div style="max-width:640px;margin:0 auto 32px;background:#ffffff;border:1px solid #e2e8f0;border-radius:12px;padding:18px">
+  <h2 style="font-size:15px;font-weight:700;color:#64748b;text-transform:uppercase;letter-spacing:.05em;margin-bottom:12px">Embed This Tool</h2>
   <p style="font-size:13px;color:#64748b;margin-bottom:12px">Add this HEX to RGB Color Converter to your website or blog for free — just paste this code:</p>
-  <div style="background:#0f172a;border:1px solid #334155;border-radius:8px;padding:12px;font-family:monospace;font-size:12px;color:#7dd3fc;word-break:break-all;margin-bottom:10px" id="embed-code">&lt;iframe src=&quot;https://hex-to-rgb.tabutility.com/&quot; width=&quot;100%&quot; height=&quot;600&quot; frameborder=&quot;0&quot; style=&quot;border-radius:12px&quot; title=&quot;HEX to RGB Color Converter by Tabutility&quot;&gt;&lt;/iframe&gt;
+  <div style="background:#f8f7f4;border:1px solid #e2e8f0;border-radius:8px;padding:12px;font-family:'Inter',monospace;font-size:12px;color:#7dd3fc;word-break:break-all;margin-bottom:10px" id="embed-code">&lt;iframe src=&quot;https://hex-to-rgb.tabutility.com/&quot; width=&quot;100%&quot; height=&quot;600&quot; frameborder=&quot;0&quot; style=&quot;border-radius:12px&quot; title=&quot;HEX to RGB Color Converter by Tabutility&quot;&gt;&lt;/iframe&gt;
 &lt;p style=&quot;font-size:12px&quot;&gt;&lt;a href=&quot;https://hex-to-rgb.tabutility.com/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;HEX to RGB Color Converter&lt;/a&gt; by &lt;a href=&quot;https://tabutility.com/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Tabutility&lt;/a&gt;&lt;/p&gt;</div>
-  <button onclick="navigator.clipboard.writeText(document.getElementById('embed-code').textContent).then(()=>{this.textContent='Copied!';setTimeout(()=>this.textContent='Copy Embed Code',2000)})" style="background:#38bdf8;color:#0f172a;border:none;border-radius:8px;padding:9px 18px;font-size:13px;font-weight:700;cursor:pointer">Copy Embed Code</button>
+  <button onclick="navigator.clipboard.writeText(document.getElementById('embed-code').textContent).then(()=>{this.textContent='Copied!';setTimeout(()=>this.textContent='Copy Embed Code',2000)})" style="background:#0f172a;color:#f8f7f4;border:none;border-radius:8px;padding:9px 18px;font-size:13px;font-weight:700;cursor:pointer">Copy Embed Code</button>
   <span style="font-size:11px;color:#475569;margin-left:12px">Free to use — the credit link helps others find the tool</span>
 </div>
-<div style="margin:0 auto 24px;max-width:640px;background:#1e293b;border-radius:10px;padding:14px 18px;display:flex;align-items:center;gap:14px;cursor:pointer;border:1px solid #334155" onclick="window.open('https://go.nordvpn.net/aff_c?offer_id=15&aff_id=153622&url_id=902','_blank','noopener noreferrer')" title="Stay private online">
+<div style="margin:0 auto 24px;max-width:640px;background:#ffffff;border-radius:10px;padding:14px 18px;display:flex;align-items:center;gap:14px;cursor:pointer;border:1px solid #e2e8f0" onclick="window.open('https://go.nordvpn.net/aff_c?offer_id=15&aff_id=153622&url_id=902','_blank','noopener noreferrer')" title="Stay private online">
   <span style="font-size:28px;flex-shrink:0">🛡️</span>
   <div style="min-width:0">
-    <div style="font-size:13px;font-weight:700;color:#f1f5f9;margin-bottom:3px">Stay private online</div>
-    <div style="font-size:12px;color:#94a3b8">Protect your connection with NordVPN <span style="color:#4ade80;white-space:nowrap">→ Get NordVPN</span></div>
+    <div style="font-size:13px;font-weight:700;color:#0f172a;margin-bottom:3px">Stay private online</div>
+    <div style="font-size:12px;color:#64748b">Protect your connection with NordVPN <span style="color:#4ade80;white-space:nowrap">→ Get NordVPN</span></div>
     <div style="font-size:10px;color:#475569;margin-top:3px">Sponsored · Ad</div>
   </div>
 </div>
-<div style="margin:0 auto 24px;max-width:640px;background:#1e293b;border-radius:10px;padding:14px 18px;display:flex;align-items:center;gap:14px;cursor:pointer;border:1px solid #334155" onclick="window.open('https://www.amazon.com/s?k=programming+coding+books&tag=tabutility-20','_blank','noopener noreferrer')" title="Level up your dev skills?">
+<div style="margin:0 auto 24px;max-width:640px;background:#ffffff;border-radius:10px;padding:14px 18px;display:flex;align-items:center;gap:14px;cursor:pointer;border:1px solid #e2e8f0" onclick="window.open('https://www.amazon.com/s?k=programming+coding+books&tag=tabutility-20','_blank','noopener noreferrer')" title="Level up your dev skills?">
   <span style="font-size:28px;flex-shrink:0">📚</span>
   <div style="min-width:0">
-    <div style="font-size:13px;font-weight:700;color:#f1f5f9;margin-bottom:3px">Level up your dev skills?</div>
-    <div style="font-size:12px;color:#94a3b8">Browse programming books <span style="color:#f59e0b;white-space:nowrap">→ Browse on Amazon</span></div>
+    <div style="font-size:13px;font-weight:700;color:#0f172a;margin-bottom:3px">Level up your dev skills?</div>
+    <div style="font-size:12px;color:#64748b">Browse programming books <span style="color:#f59e0b;white-space:nowrap">→ Browse on Amazon</span></div>
     <div style="font-size:10px;color:#475569;margin-top:3px">As an Amazon Associate we earn from qualifying purchases.</div>
   </div>
 </div>
-<h2 style="font-size:15px;font-weight:700;color:#94a3b8;text-transform:uppercase;letter-spacing:.05em;margin-bottom:14px;max-width:640px;margin-left:auto;margin-right:auto">Related Tools</h2>
+<h2 style="font-size:15px;font-weight:700;color:#64748b;text-transform:uppercase;letter-spacing:.05em;margin-bottom:14px;max-width:640px;margin-left:auto;margin-right:auto">Related Tools</h2>
 <div style="max-width:640px;margin:0 auto 32px;display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:10px">
-  <a href="https://json-formatter.tabutility.com/" style="display:block;background:rgba(30,41,59,1);border:1px solid rgba(255,255,255,0.12);border-radius:10px;padding:12px 16px;text-decoration:none;color:inherit"><div style="font-size:13px;font-weight:600;color:#f1f5f9">JSON Formatter</div><div style="font-size:11px;color:#94a3b8;margin-top:2px">Developer Tools</div></a>
-  <a href="https://base64-encoder.tabutility.com/" style="display:block;background:rgba(30,41,59,1);border:1px solid rgba(255,255,255,0.12);border-radius:10px;padding:12px 16px;text-decoration:none;color:inherit"><div style="font-size:13px;font-weight:600;color:#f1f5f9">Base64 Encoder / Decoder</div><div style="font-size:11px;color:#94a3b8;margin-top:2px">Developer Tools</div></a>
-  <a href="https://url-encoder.tabutility.com/" style="display:block;background:rgba(30,41,59,1);border:1px solid rgba(255,255,255,0.12);border-radius:10px;padding:12px 16px;text-decoration:none;color:inherit"><div style="font-size:13px;font-weight:600;color:#f1f5f9">URL Encoder / Decoder</div><div style="font-size:11px;color:#94a3b8;margin-top:2px">Developer Tools</div></a>
-  <a href="https://password-generator.tabutility.com/" style="display:block;background:rgba(30,41,59,1);border:1px solid rgba(255,255,255,0.12);border-radius:10px;padding:12px 16px;text-decoration:none;color:inherit"><div style="font-size:13px;font-weight:600;color:#f1f5f9">Password Generator</div><div style="font-size:11px;color:#94a3b8;margin-top:2px">Developer Tools</div></a>
+  <a href="https://json-formatter.tabutility.com/" style="display:block;background:#ffffff;border:1px solid #e2e8f0;border-radius:10px;padding:12px 16px;text-decoration:none;color:inherit"><div style="font-size:13px;font-weight:600;color:#0f172a">JSON Formatter</div><div style="font-size:11px;color:#64748b;margin-top:2px">Developer Tools</div></a>
+  <a href="https://base64-encoder.tabutility.com/" style="display:block;background:#ffffff;border:1px solid #e2e8f0;border-radius:10px;padding:12px 16px;text-decoration:none;color:inherit"><div style="font-size:13px;font-weight:600;color:#0f172a">Base64 Encoder / Decoder</div><div style="font-size:11px;color:#64748b;margin-top:2px">Developer Tools</div></a>
+  <a href="https://url-encoder.tabutility.com/" style="display:block;background:#ffffff;border:1px solid #e2e8f0;border-radius:10px;padding:12px 16px;text-decoration:none;color:inherit"><div style="font-size:13px;font-weight:600;color:#0f172a">URL Encoder / Decoder</div><div style="font-size:11px;color:#64748b;margin-top:2px">Developer Tools</div></a>
+  <a href="https://password-generator.tabutility.com/" style="display:block;background:#ffffff;border:1px solid #e2e8f0;border-radius:10px;padding:12px 16px;text-decoration:none;color:inherit"><div style="font-size:13px;font-weight:600;color:#0f172a">Password Generator</div><div style="font-size:11px;color:#64748b;margin-top:2px">Developer Tools</div></a>
 </div>
 <section id="seo-content">
   <style>
-    #seo-content{max-width:760px;margin:2.5rem auto;padding:0 1.25rem 3rem;font-family:system-ui,-apple-system,'Segoe UI',sans-serif;color:#334155;line-height:1.7}
+    #seo-content{max-width:760px;margin:2.5rem auto;padding:0 1.25rem 3rem;font-family:'Inter',system-ui,-apple-system,'Segoe UI',sans-serif;color:#334155;line-height:1.7}
     #seo-content h2{font-size:1.35rem;color:#0f172a;margin:2rem 0 .75rem}
     #seo-content h3{font-size:1.05rem;color:#0f172a;margin:1.25rem 0 .5rem}
     #seo-content p,#seo-content li{font-size:.95rem}
     #seo-content .example{background:#f8fafc;border:1px solid #e2e8f0;border-radius:8px;padding:1rem 1.25rem;margin:1rem 0}
-    @media (prefers-color-scheme:dark){#seo-content{color:#cbd5e1}#seo-content h2,#seo-content h3{color:#f1f5f9}#seo-content .example{background:#1e293b;border-color:#334155}}
+    
   </style>
   <p>The hex to RGB converter translates a hexadecimal color code such as <code>#3498DB</code> into its red, green, and blue components, giving you a ready-to-paste <code>rgb()</code> value. It is built for web designers, front-end developers, and anyone matching brand colors across CSS, design tools, and style guides where different apps expect different color formats.</p>
   <h2>How the Hex to RGB Converter Works</h2>
